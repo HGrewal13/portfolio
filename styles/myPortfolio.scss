@@ -1,0 +1,45 @@
+.portfolioPieces {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myPortfolio {
+    padding: 3% 0;
+}
+
+.myPortfolio h2 {
+    margin: 0 0 2%;
+    text-align: center;
+}
+
+.item {
+    width: 20%;
+    margin: 0 2.5%;
+}
+
+.focusedPiece {
+    width: 90%;
+    margin: 5% auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.laptopScreen {
+    width: 40%;
+}
+
+.laptopScreen img {
+    max-width: 100%;
+}
+
+.focusedPieceText {
+    width: 55%;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}

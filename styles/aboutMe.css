@@ -1,0 +1,41 @@
+.aboutMe {
+  padding: 2% 0;
+  background-color: #a9dbb8;
+}
+
+.aboutMeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutMeText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  margin-top: 7%;
+}
+
+.aboutMeText p {
+  margin-top: 5%;
+}
+
+.myPicture {
+  width: 40%;
+}
+
+.myPicture img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid purple;
+}
+/*# sourceMappingURL=aboutMe.css.map */

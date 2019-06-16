@@ -1,0 +1,52 @@
+header {
+    height: 100vh;
+    // background-image: url('./assets/header2.jpg');
+    // background-size: cover;
+    // background-position: center;
+    background-color: #7ca5b8;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+}
+
+nav h2 {
+    color: #545f66;
+}
+
+a {
+    text-decoration: none;
+    color: #545f66;
+}
+
+ul {
+    width: 40%;
+    border: 1px solid blue;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerMaterial {
+    // padding: 25%;
+    position: relative;
+}
+
+h1 {
+    border-left: 5px solid #38369a;
+    padding-left: 15px;
+    position: absolute;
+    left: 40%;
+    top: 300px;
+    display: inline-block;
+    font-size: 45px;
+    color: #545f66;
+}
+
+.headingBlock {
+    display: block;
+}

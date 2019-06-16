@@ -1,0 +1,35 @@
+.aboutMe {
+    padding: 2% 0;
+    background-color: #a9dbb8;
+}
+
+.aboutMeContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMeText {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 7%;
+}
+
+.aboutMeText h2 {
+    // padding-top: 10%;
+}
+
+.aboutMeText p {
+    margin-top: 5%;
+}
+
+.myPicture {
+    width: 40%;
+}
+
+.myPicture img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid purple;
+}
