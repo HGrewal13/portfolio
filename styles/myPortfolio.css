@@ -1,3 +1,22 @@
+.myPortfolio {
+  padding: 3% 0;
+  background-color: #212D40;
+}
+
+.myPortfolio h2 {
+  margin: 0 0 2%;
+  text-align: center;
+  color: #7CA5B8;
+}
+
+.myPortfolio h4 {
+  color: #E0E0E0;
+}
+
+.myPortfolio p {
+  color: #7CA5B8;
+}
+
 .portfolioPieces {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,18 +25,18 @@
       flex-wrap: wrap;
 }
 
-.myPortfolio {
-  padding: 3% 0;
-}
-
-.myPortfolio h2 {
-  margin: 0 0 2%;
-  text-align: center;
-}
-
 .item {
   width: 20%;
   margin: 0 2.5%;
+  text-align: center;
+}
+
+.item h4 {
+  margin: 0 0 5px;
+}
+
+.itemImg {
+  width: 100%;
 }
 
 .focusedPiece {
@@ -41,6 +60,10 @@
 
 .focusedPieceText {
   width: 55%;
+}
+
+.focusedPieceText h4 {
+  margin-bottom: 5px;
 }
 
 .visible {

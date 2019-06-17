@@ -1,6 +1,5 @@
 .aboutMe {
   padding: 2% 0;
-  background-color: #a9dbb8;
 }
 
 .aboutMeContainer {
@@ -24,8 +23,14 @@
   margin-top: 7%;
 }
 
+.aboutMeText h2 {
+  color: #212D40;
+  border-bottom: 3px solid #3E5641;
+}
+
 .aboutMeText p {
   margin-top: 5%;
+  color: #212D40;
 }
 
 .myPicture {
@@ -36,6 +41,6 @@
   max-width: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 5px solid purple;
+  border: 5px solid #212D40;
 }
 /*# sourceMappingURL=aboutMe.css.map */

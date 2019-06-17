@@ -1,31 +1,40 @@
 header {
     height: 100vh;
-    // background-image: url('./assets/header2.jpg');
-    // background-size: cover;
-    // background-position: center;
-    background-color: #7ca5b8;
+    background-image: url('./assets/header2.jpg');
+    background-size: cover;
+    background-position: center;
+    // background-color: #7ca5b8;
     box-sizing: border-box;
 }
 
 nav {
+    background-color: #212d40;
+    position: fixed;
+    width: 100%;
+}
+
+.navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2%;
+    padding: 1% 0 1%;
+    // background-color: #212D40;
 }
 
 nav h2 {
-    color: #545f66;
+    // color: #545f66;
+    color: #E3E4DB;
 }
 
 a {
     text-decoration: none;
-    color: #545f66;
+    // color: #545f66;
+    color: #E3E4DB;
 }
 
 ul {
     width: 40%;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -40,13 +49,53 @@ h1 {
     border-left: 5px solid #38369a;
     padding-left: 15px;
     position: absolute;
-    left: 40%;
-    top: 300px;
+    left: 39%;
+    top: 227px;
     display: inline-block;
     font-size: 45px;
-    color: #545f66;
+    // color: #545f66;
+    color: #E3E4DB;
 }
 
 .headingBlock {
     display: block;
+}
+
+@media(max-width:1610px) {
+    h1 {
+        top: 305px;
+    }
+}
+
+@media(max-width:1220px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:950px) {
+    h1 {
+        font-size: 1.6rem;
+        top: 315px;
+    }
+}
+
+@media(max-width:730px) {
+    h1 {
+        font-size: 1.5rem;
+        left: 35%;
+    }
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size: 1.4rem;
+        left:30%;
+    }
+}
+
+@media(max-width:356px) {
+    h1 {
+        left: 18%;
+    }
 }

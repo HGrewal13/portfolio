@@ -1,9 +1,11 @@
 .contact {
     padding: 2% 0;
+    background-color: #212D40;
 }
 
 .contactContainer h2 {
     text-align: center;
+    color: #E3E4DB;
 }
 
 form {
@@ -23,10 +25,25 @@ form {
     width: 45%;
     margin: 1% 0;
     height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #E3E4DB;
 }
 
 .contact textarea {
     width: 80%;
     margin: 1% 0;
     height: 200px;
+    background-color: transparent;
+    // border: none;
 }
+
+button[type="submit"] {
+    padding: 5px;
+    background-color: #E3E4DB;
+    color: #212D40;
+}
+
+// .submit {
+//     padding: 5px;
+// }

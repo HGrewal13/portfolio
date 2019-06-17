@@ -182,7 +182,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+}
+
+html {
+  font-size: 125%;
 }
 
 .wrapper {
@@ -196,12 +199,20 @@ img {
 
 header {
   height: 100vh;
-  background-color: #7ca5b8;
+  background-image: url("./assets/header2.jpg");
+  background-size: cover;
+  background-position: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 nav {
+  background-color: #212d40;
+  position: fixed;
+  width: 100%;
+}
+
+.navContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,21 +222,20 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2%;
+  padding: 1% 0 1%;
 }
 
 nav h2 {
-  color: #545f66;
+  color: #E3E4DB;
 }
 
 a {
   text-decoration: none;
-  color: #545f66;
+  color: #E3E4DB;
 }
 
 ul {
   width: 40%;
-  border: 1px solid blue;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,20 +253,58 @@ h1 {
   border-left: 5px solid #38369a;
   padding-left: 15px;
   position: absolute;
-  left: 40%;
-  top: 300px;
+  left: 39%;
+  top: 227px;
   display: inline-block;
   font-size: 45px;
-  color: #545f66;
+  color: #E3E4DB;
 }
 
 .headingBlock {
   display: block;
 }
 
+@media (max-width: 1610px) {
+  h1 {
+    top: 305px;
+  }
+}
+
+@media (max-width: 1220px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  h1 {
+    font-size: 1.6rem;
+    top: 315px;
+  }
+}
+
+@media (max-width: 730px) {
+  h1 {
+    font-size: 1.5rem;
+    left: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.4rem;
+    left: 30%;
+  }
+}
+
+@media (max-width: 356px) {
+  h1 {
+    left: 18%;
+  }
+}
+
 .aboutMe {
   padding: 2% 0;
-  background-color: #a9dbb8;
 }
 
 .aboutMeContainer {
@@ -280,8 +328,14 @@ h1 {
   margin-top: 7%;
 }
 
+.aboutMeText h2 {
+  color: #212D40;
+  border-bottom: 3px solid #3E5641;
+}
+
 .aboutMeText p {
   margin-top: 5%;
+  color: #212D40;
 }
 
 .myPicture {
@@ -292,7 +346,26 @@ h1 {
   max-width: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 5px solid purple;
+  border: 5px solid #212D40;
+}
+
+.myPortfolio {
+  padding: 3% 0;
+  background-color: #212D40;
+}
+
+.myPortfolio h2 {
+  margin: 0 0 2%;
+  text-align: center;
+  color: #7CA5B8;
+}
+
+.myPortfolio h4 {
+  color: #E0E0E0;
+}
+
+.myPortfolio p {
+  color: #7CA5B8;
 }
 
 .portfolioPieces {
@@ -303,18 +376,18 @@ h1 {
       flex-wrap: wrap;
 }
 
-.myPortfolio {
-  padding: 3% 0;
-}
-
-.myPortfolio h2 {
-  margin: 0 0 2%;
-  text-align: center;
-}
-
 .item {
   width: 20%;
   margin: 0 2.5%;
+  text-align: center;
+}
+
+.item h4 {
+  margin: 0 0 5px;
+}
+
+.itemImg {
+  width: 100%;
 }
 
 .focusedPiece {
@@ -338,6 +411,10 @@ h1 {
 
 .focusedPieceText {
   width: 55%;
+}
+
+.focusedPieceText h4 {
+  margin-bottom: 5px;
 }
 
 .visible {
@@ -387,10 +464,12 @@ h1 {
 
 .contact {
   padding: 2% 0;
+  background-color: #212D40;
 }
 
 .contactContainer h2 {
   text-align: center;
+  color: #E3E4DB;
 }
 
 form {
@@ -421,11 +500,21 @@ form {
   width: 45%;
   margin: 1% 0;
   height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #E3E4DB;
 }
 
 .contact textarea {
   width: 80%;
   margin: 1% 0;
   height: 200px;
+  background-color: transparent;
+}
+
+button[type="submit"] {
+  padding: 5px;
+  background-color: #E3E4DB;
+  color: #212D40;
 }
 /*# sourceMappingURL=styles.css.map */
