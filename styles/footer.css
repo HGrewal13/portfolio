@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #212d40aa;
+  color: #ffe7d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer i {
+  font-size: 50px;
+}
+
+.socialMedia {
+  width: 30%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=footer.css.map */

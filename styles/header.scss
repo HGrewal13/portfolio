@@ -8,9 +8,10 @@ header {
 }
 
 nav {
-    background-color: #212d40;
+    background-color: #212d40aa;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 .navContainer {
@@ -23,13 +24,15 @@ nav {
 
 nav h2 {
     // color: #545f66;
-    color: #E3E4DB;
+    // color: #E3E4DB;
+    color: #ffe7d4;
 }
 
 a {
     text-decoration: none;
     // color: #545f66;
-    color: #E3E4DB;
+    // color: #E3E4DB;
+    color: #ffe7d4;
 }
 
 ul {
@@ -46,7 +49,7 @@ ul {
 }
 
 h1 {
-    border-left: 5px solid #38369a;
+    // border-left: 5px solid #38369a;
     padding-left: 15px;
     position: absolute;
     left: 39%;
@@ -54,7 +57,8 @@ h1 {
     display: inline-block;
     font-size: 45px;
     // color: #545f66;
-    color: #E3E4DB;
+    // color: #E3E4DB;
+    color: #ffe7d4;
 }
 
 .headingBlock {
@@ -70,6 +74,12 @@ h1 {
 @media(max-width:1220px) {
     h1 {
         font-size: 1.8rem;
+    }
+}
+
+@media(max-width:1100px) {
+    nav {
+        display: none;
     }
 }
 
@@ -91,6 +101,12 @@ h1 {
     h1 {
         font-size: 1.4rem;
         left:30%;
+    }
+}
+
+@media(max-width:380px) {
+    h1 {
+        
     }
 }
 

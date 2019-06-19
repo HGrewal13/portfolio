@@ -3,9 +3,16 @@
     background-color: #212D40;
 }
 
-.contactContainer h2 {
+.contact h2 {
     text-align: center;
-    color: #E3E4DB;
+    // color: #E3E4DB;
+    color: #ffe7d4;
+    margin-bottom: 2%;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
 }
 
 form {
@@ -13,6 +20,7 @@ form {
     flex-direction: column;
     align-items: center;
     padding: 2% 0;
+    width: 100%;
 }
 
 .inputs {
@@ -33,9 +41,9 @@ form {
 .contact textarea {
     width: 80%;
     margin: 1% 0;
-    height: 200px;
+    height: 250px;
     background-color: transparent;
-    // border: none;
+    border: 3px solid #E3E4DB;
 }
 
 button[type="submit"] {
@@ -44,6 +52,23 @@ button[type="submit"] {
     color: #212D40;
 }
 
-// .submit {
-//     padding: 5px;
-// }
+.contactInfo {
+    color: #ffe7d4;
+    width: 40%;
+}
+
+.contact button[type="submit"] {
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+@media(max-width:800px) {
+    .inputs {
+        flex-direction: column;
+    }
+    .contact input {
+        width: 100%;
+    }
+    
+}

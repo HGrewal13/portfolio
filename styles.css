@@ -207,9 +207,10 @@ header {
 }
 
 nav {
-  background-color: #212d40;
+  background-color: #212d40aa;
   position: fixed;
   width: 100%;
+  z-index: 5;
 }
 
 .navContainer {
@@ -226,12 +227,12 @@ nav {
 }
 
 nav h2 {
-  color: #E3E4DB;
+  color: #ffe7d4;
 }
 
 a {
   text-decoration: none;
-  color: #E3E4DB;
+  color: #ffe7d4;
 }
 
 ul {
@@ -250,14 +251,13 @@ ul {
 }
 
 h1 {
-  border-left: 5px solid #38369a;
   padding-left: 15px;
   position: absolute;
   left: 39%;
   top: 227px;
   display: inline-block;
   font-size: 45px;
-  color: #E3E4DB;
+  color: #ffe7d4;
 }
 
 .headingBlock {
@@ -273,6 +273,12 @@ h1 {
 @media (max-width: 1220px) {
   h1 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav {
+    display: none;
   }
 }
 
@@ -304,7 +310,7 @@ h1 {
 }
 
 .aboutMe {
-  padding: 2% 0;
+  padding: 5% 0;
 }
 
 .aboutMeContainer {
@@ -349,6 +355,40 @@ h1 {
   border: 5px solid #212D40;
 }
 
+@media (max-width: 1100px) {
+  .aboutMeText {
+    width: 80%;
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 960px) {
+  .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .myPicture {
+    width: 60%;
+  }
+  .aboutMeText h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutMeText {
+    width: 100%;
+  }
+}
+
 .myPortfolio {
   padding: 3% 0;
   background-color: #212D40;
@@ -357,15 +397,24 @@ h1 {
 .myPortfolio h2 {
   margin: 0 0 2%;
   text-align: center;
-  color: #7CA5B8;
+  color: #ffe7d4;
 }
 
 .myPortfolio h4 {
-  color: #E0E0E0;
+  color: #ffe7d4;
+}
+
+.myPortfolio h5 {
+  color: white;
 }
 
 .myPortfolio p {
   color: #7CA5B8;
+}
+
+.myPortfolio button {
+  border-radius: 20px;
+  background-color: white;
 }
 
 .portfolioPieces {
@@ -374,16 +423,29 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reportCardIcon {
+  width: 25px;
 }
 
 .item {
-  width: 20%;
-  margin: 0 2.5%;
+  width: 23%;
+  margin: 0 0.5%;
   text-align: center;
+}
+
+.itemFocus {
+  border: 2px solid yellow;
 }
 
 .item h4 {
   margin: 0 0 5px;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .itemImg {
@@ -401,6 +463,16 @@ h1 {
           justify-content: space-between;
 }
 
+.liveButtons {
+  display: block;
+}
+
+.liveButtons button {
+  width: 125px;
+  margin: 15px 5px;
+  padding: 5px;
+}
+
 .laptopScreen {
   width: 40%;
 }
@@ -414,15 +486,89 @@ h1 {
 }
 
 .focusedPieceText h4 {
-  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+
+.focusedPieceText h4,
+.focusedPieceText h5,
+.focusedPieceText p {
+  margin-bottom: 10px;
 }
 
 .visible {
   display: block;
 }
 
+.visibleButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .invisible {
   display: none;
+}
+
+.flexedDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showSkills i {
+  margin: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 1250px) {
+  .myPortfolio h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .liveButtons button {
+    width: 125px;
+    margin: 15px 5px;
+    padding: 2.5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .focusedPiece {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .laptopScreen {
+    width: 60%;
+    margin-bottom: 15px;
+  }
+  .focusedPieceText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .focusedPieceText {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .laptopScreen {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .myPortfolio h4 {
+    font-size: 1.2rem;
+  }
 }
 
 .mySkills {
@@ -455,6 +601,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .skill i {
@@ -462,14 +609,54 @@ h1 {
   padding: 5% 0;
 }
 
+.firebaseSkill {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 1100px) {
+  .skill {
+    width: 29%;
+    margin: 2%;
+  }
+  .skill i {
+    padding: 2.5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .skill i {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    width: 40%;
+    margin: 0 5%;
+  }
+}
+
 .contact {
   padding: 2% 0;
   background-color: #212D40;
 }
 
-.contactContainer h2 {
+.contact h2 {
   text-align: center;
-  color: #E3E4DB;
+  color: #ffe7d4;
+  margin-bottom: 2%;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 form {
@@ -484,6 +671,7 @@ form {
       -ms-flex-align: center;
           align-items: center;
   padding: 2% 0;
+  width: 100%;
 }
 
 .inputs {
@@ -508,13 +696,66 @@ form {
 .contact textarea {
   width: 80%;
   margin: 1% 0;
-  height: 200px;
+  height: 250px;
   background-color: transparent;
+  border: 3px solid #E3E4DB;
 }
 
 button[type="submit"] {
   padding: 5px;
   background-color: #E3E4DB;
   color: #212D40;
+}
+
+.contactInfo {
+  color: #ffe7d4;
+  width: 40%;
+}
+
+.contact button[type="submit"] {
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+@media (max-width: 800px) {
+  .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact input {
+    width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #212d40aa;
+  color: #ffe7d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer i {
+  font-size: 50px;
+}
+
+.socialMedia {
+  width: 30%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */

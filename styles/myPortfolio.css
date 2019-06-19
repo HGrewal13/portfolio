@@ -6,15 +6,24 @@
 .myPortfolio h2 {
   margin: 0 0 2%;
   text-align: center;
-  color: #7CA5B8;
+  color: #ffe7d4;
 }
 
 .myPortfolio h4 {
-  color: #E0E0E0;
+  color: #ffe7d4;
+}
+
+.myPortfolio h5 {
+  color: white;
 }
 
 .myPortfolio p {
   color: #7CA5B8;
+}
+
+.myPortfolio button {
+  border-radius: 20px;
+  background-color: white;
 }
 
 .portfolioPieces {
@@ -23,16 +32,29 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reportCardIcon {
+  width: 25px;
 }
 
 .item {
-  width: 20%;
-  margin: 0 2.5%;
+  width: 23%;
+  margin: 0 0.5%;
   text-align: center;
+}
+
+.itemFocus {
+  border: 2px solid yellow;
 }
 
 .item h4 {
   margin: 0 0 5px;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .itemImg {
@@ -50,6 +72,16 @@
           justify-content: space-between;
 }
 
+.liveButtons {
+  display: block;
+}
+
+.liveButtons button {
+  width: 125px;
+  margin: 15px 5px;
+  padding: 5px;
+}
+
 .laptopScreen {
   width: 40%;
 }
@@ -63,14 +95,88 @@
 }
 
 .focusedPieceText h4 {
-  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+
+.focusedPieceText h4,
+.focusedPieceText h5,
+.focusedPieceText p {
+  margin-bottom: 10px;
 }
 
 .visible {
   display: block;
 }
 
+.visibleButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .invisible {
   display: none;
+}
+
+.flexedDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showSkills i {
+  margin: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 1250px) {
+  .myPortfolio h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .liveButtons button {
+    width: 125px;
+    margin: 15px 5px;
+    padding: 2.5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .focusedPiece {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .laptopScreen {
+    width: 60%;
+    margin-bottom: 15px;
+  }
+  .focusedPieceText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .focusedPieceText {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .laptopScreen {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .myPortfolio h4 {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=myPortfolio.css.map */

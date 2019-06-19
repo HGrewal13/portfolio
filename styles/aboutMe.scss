@@ -1,5 +1,5 @@
 .aboutMe {
-    padding: 2% 0;
+    padding: 5% 0;
     // background-color: #a9dbb8;
     // background-color: #7CA5B8;
 }
@@ -38,4 +38,34 @@
     border-radius: 50%;
     // border: 5px solid purple;
     border: 5px solid #212D40;
+}
+
+@media(max-width: 1100px) {
+    // .myPicture {
+    //     width: 30%;
+    // }
+    .aboutMeText {
+        width: 80%;
+        margin-left: 2%;
+    }
+}
+
+@media(max-width:960px) {
+    .aboutMeContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .myPicture {
+        width: 60%;
+    }
+    .aboutMeText h2 {
+        text-align: center;
+    } 
+}
+
+@media(max-width:500px) {
+    .aboutMeText {
+        width: 100%;
+    }
 }

@@ -3,9 +3,19 @@
   background-color: #212D40;
 }
 
-.contactContainer h2 {
+.contact h2 {
   text-align: center;
-  color: #E3E4DB;
+  color: #ffe7d4;
+  margin-bottom: 2%;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 form {
@@ -20,6 +30,7 @@ form {
       -ms-flex-align: center;
           align-items: center;
   padding: 2% 0;
+  width: 100%;
 }
 
 .inputs {
@@ -44,13 +55,37 @@ form {
 .contact textarea {
   width: 80%;
   margin: 1% 0;
-  height: 200px;
+  height: 250px;
   background-color: transparent;
+  border: 3px solid #E3E4DB;
 }
 
 button[type="submit"] {
   padding: 5px;
   background-color: #E3E4DB;
   color: #212D40;
+}
+
+.contactInfo {
+  color: #ffe7d4;
+  width: 40%;
+}
+
+.contact button[type="submit"] {
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+@media (max-width: 800px) {
+  .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact input {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

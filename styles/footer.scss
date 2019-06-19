@@ -1,0 +1,24 @@
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #212d40aa;
+    color: #ffe7d4;
+    display: flex;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer i {
+    font-size: 50px;
+}
+
+.socialMedia {
+    width: 30%;
+    // border: 1px solid white;
+    margin: 0 auto;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+}
