@@ -576,7 +576,7 @@ h1 {
 }
 
 .mySkills h2 {
-  margin: 0 0 2%;
+  margin: 0 0 3%;
   text-align: center;
 }
 
@@ -590,7 +590,7 @@ h1 {
 
 .skill {
   width: 20%;
-  margin: 0 2.5%;
+  margin: 2% 2.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,7 +635,7 @@ h1 {
 @media (max-width: 600px) {
   .skill {
     width: 40%;
-    margin: 0 5%;
+    margin: 2% 5%;
   }
 }
 
@@ -686,11 +686,13 @@ form {
 
 .contact input {
   width: 45%;
-  margin: 1% 0;
+  margin: 5% 0;
   height: 30px;
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #E3E4DB;
+  color: white;
+  padding: 1%;
 }
 
 .contact textarea {
@@ -699,6 +701,8 @@ form {
   height: 250px;
   background-color: transparent;
   border: 3px solid #E3E4DB;
+  color: white;
+  padding: 2%;
 }
 
 button[type="submit"] {
@@ -713,9 +717,10 @@ button[type="submit"] {
 }
 
 .contact button[type="submit"] {
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px 0;
   padding: 5px;
+  background-color: white;
 }
 
 @media (max-width: 800px) {
@@ -741,11 +746,11 @@ footer {
 }
 
 footer img {
-  width: 50px;
+  width: 30px;
 }
 
 footer i {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .socialMedia {
@@ -757,5 +762,11 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .socialMedia {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

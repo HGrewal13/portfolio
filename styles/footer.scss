@@ -7,11 +7,15 @@ footer {
 }
 
 footer img {
-    width: 50px;
+    width: 30px;
 }
 
 footer i {
-    font-size: 50px;
+    font-size: 30px;
+}
+
+footer a {
+    // margin: 0 20px;
 }
 
 .socialMedia {
@@ -21,4 +25,10 @@ footer i {
     display: flex;
     // flex-direction: column;
     justify-content: space-between;
+}
+
+@media(max-width:600px) {
+    .socialMedia {
+        width: 60%;
+    }
 }

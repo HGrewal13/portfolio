@@ -9,11 +9,11 @@ footer {
 }
 
 footer img {
-  width: 50px;
+  width: 30px;
 }
 
 footer i {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .socialMedia {
@@ -25,5 +25,11 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .socialMedia {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

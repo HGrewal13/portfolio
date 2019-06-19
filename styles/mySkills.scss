@@ -3,7 +3,7 @@
 }
 
 .mySkills h2 {
-    margin: 0 0 2%;
+    margin: 0 0 3%;
     text-align: center;
 }
 
@@ -14,7 +14,7 @@
 
 .skill {
     width: 20%;
-    margin: 0 2.5%;
+    margin: 2% 2.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +50,6 @@
 @media(max-width:600px) {
     .skill {
         width: 40%;
-        margin: 0 5%;
+        margin: 2% 5%;
     }
 }

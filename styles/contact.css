@@ -45,11 +45,13 @@ form {
 
 .contact input {
   width: 45%;
-  margin: 1% 0;
+  margin: 5% 0;
   height: 30px;
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #E3E4DB;
+  color: white;
+  padding: 1%;
 }
 
 .contact textarea {
@@ -58,6 +60,8 @@ form {
   height: 250px;
   background-color: transparent;
   border: 3px solid #E3E4DB;
+  color: white;
+  padding: 2%;
 }
 
 button[type="submit"] {
@@ -72,9 +76,10 @@ button[type="submit"] {
 }
 
 .contact button[type="submit"] {
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px 0;
   padding: 5px;
+  background-color: white;
 }
 
 @media (max-width: 800px) {
